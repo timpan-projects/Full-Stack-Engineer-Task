@@ -73,6 +73,7 @@ function query(connection) {
 
 // Insert user data into table
 function insert(connection, obj) {
+    if (obj.date == null || obj.time == null) return; //prevent api server crash
     var sql = "INSERT INTO `user` (`name`, `email`, `date`, `time`) VALUES ('" + 
         obj.fullname + "', '" +
         obj.email + "', '" +
