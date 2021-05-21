@@ -18,7 +18,7 @@ class Main extends Component {
           </div>
           <ul>
             <li><NavLink to="/">Register new user</NavLink></li>
-            <li><NavLink to="/view">View most recent record</NavLink></li>
+            <li><NavLink to="/view">View all users</NavLink></li>
           </ul>
           <div>
             <Route exact path="/" component={Insert}/>
