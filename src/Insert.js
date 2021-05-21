@@ -55,8 +55,8 @@ class Insert extends Component {
         <input type="date" name="date" onChange={this.handleInputChange}/>
         <p>Time</p>
         <input type="time" name="time" onChange={this.handleInputChange}/>
-        <div onClick={this.submitBtnClicked}>
-          <h2 style={{border: "2px solid black", borderRadius: "25%", display: "inline-block", padding: "10px"}}>SUBMIT</h2>
+        <div>
+          <h2 onClick={this.submitBtnClicked} style={{border: "2px solid black", borderRadius: "25%", display: "inline-block", padding: "10px"}}>SUBMIT</h2>
         </div>
       </div>
     );
